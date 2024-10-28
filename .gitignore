@@ -1,0 +1,10 @@
+venv/
+biodata_env/
+
+*.sqlite3
+
+__pycache__/
+*.pyc
+*.pyo
+
+*.env
