@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Curriculum Vitae{% endblock %}</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'myProjectApp/css/style.css' %}">
+</head>
+<body>
+    <h1 align="center"><font face="Bahnschrift">Biodata Diri</font></h1>
+    <hr style="border: 2px solid white; width: 35%;">
+    
+    <!-- Navigation Menu -->
+    <div align="center">
+        <a href="{% url 'home' %}">Home</a> |
+        <a href="{% url 'education' %}">Riwayat Pendidikan</a> |
+        <a href="{% url 'experience' %}">Pengalaman Bekerja</a> |
+        <a href="{% url 'social' %}">Social Media</a>
+    </div>
+    <hr style="border: 2px solid white; width: 35%;">
+
+    <!-- Content Block -->
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2024 Naufal Fadhilah. All rights reserved.</p>
+</footer>
+
+</html>

@@ -1,0 +1,16 @@
+{% extends 'myProjectApp/base.html' %}
+{% load static %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<div class="container">
+    <img src="{% static 'myProjectApp/img/imgur.jpg' %}" height="250" width="250" alt="Profile Picture" class="profile-img">
+    <div class="profile-info">
+        <h1>Naufal Fadhilah</h1>
+        <p>Graphic Designer | Writer | Front-End Developer</p>
+        <p><i>
+            an ordinary person of Computer Science Education college student at The Education University.<br>
+            Mostly doing some part-time job and sleep a lot.
+        </i></p>
+    </div>
+</div>
+{% endblock %}
